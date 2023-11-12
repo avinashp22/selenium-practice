@@ -9,7 +9,7 @@ public class ChromeBrowerTest {
 
     public static void main(String[] args) {
 
-        WebDriver driver = new ChromeDriver(); // to launch chrome
+        WebDriver driver = new ChromeDriver(); // to launch chrome or change to firefox
         driver.get("https://demo.nopcommerce.com/"); // launch url
         //or
         String baseURL = "https://demo.nopcommerce.com/"; //store url
