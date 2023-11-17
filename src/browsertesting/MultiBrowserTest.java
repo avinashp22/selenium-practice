@@ -9,8 +9,7 @@ import java.time.Duration;
 
 public class MultiBrowserTest {
 
-    static String browser = "firefox";
-    static String baseURL = "https://demo.nopcommerce.com/";
+    static String browser = "firefox"; // choose browser
     static WebDriver driver; // declare globally
 
     public static void main(String[] args) {
@@ -23,7 +22,10 @@ public class MultiBrowserTest {
         } else {
             System.out.println("Wrong Browser name");
         }
-        driver.get(baseURL);
+
+
+        String baseURL = "https://demo.nopcommerce.com/"; // set base url
+        driver.get(baseURL);  // get base url
         driver.manage().window().maximize(); // maximise the window
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));  //give implicit wait to driver
 
@@ -33,6 +35,6 @@ public class MultiBrowserTest {
         System.out.println("Page Source: " + driver.getPageSource()); // get page source
 
 
-        driver.quit();
+        driver.quit();  // close browser
     }
 }
