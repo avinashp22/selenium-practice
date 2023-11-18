@@ -10,7 +10,7 @@ import java.time.Duration;
 public class BaseTest{
 
 static String browser = "chrome"; // choose browser
-public static WebDriver driver; // declare globally
+public static WebDriver driver; // declare globally make public so can inherit
 //static String baseURL = "https://demo.nopcommerce.com/"; // set base url
 
 
